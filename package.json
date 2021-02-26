@@ -1,0 +1,27 @@
+{
+  "name": "bgmbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/app.js",
+  "bin": "public/app.js",
+  "scripts": {
+    "build": "pkg ."
+  },
+  "pkg": {
+    "assets": [
+      "views/**/*",
+      "public/**/*"
+    ],
+    "targets": [
+      "node12-win-x86"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "github:discordjs/opus",
+    "discord.js": "12.5.1",
+    "ffmpeg-static": "4.2.7",
+    "opusscript": "0.0.7"
+  }
+}
